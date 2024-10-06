@@ -7,7 +7,10 @@ import urlRoutes from './routes/urlRoutes.js';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://url-shortner-frontend-liard.vercel.app', // replace with your frontend URL
+  credentials: true // if you are sending cookies or authorization headers
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
