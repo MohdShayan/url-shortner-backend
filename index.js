@@ -18,5 +18,5 @@ app.use(express.urlencoded({ extended: false }));
 // Routes
 app.use('/api/url', urlRoutes);
 
-// Export the app for Vercel
+l
 export default app;
